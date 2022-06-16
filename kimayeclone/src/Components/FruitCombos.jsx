@@ -126,7 +126,8 @@ const FruitCombos = () => {
        data.map((ele)=>{
          return(
            <div key={ele.id}>
-                   <div><img style={{width:"350px",height:"350px",borderRadius:"30px"}} src={ele.imageurl} alt="photo" /></div>
+                   <div><img style={{width:"350px",height:"350px",borderRadius:"30px"}} src={ele.imageurl} alt="photo" />
+                   <div onClick={()=>navigate("/cart")}>Add to cart</div></div>
                    <p>{ele.heading}</p>
                    <span style={{color:"red",fontWeight:"bold"}}>Price: {ele.para}</span>
                    

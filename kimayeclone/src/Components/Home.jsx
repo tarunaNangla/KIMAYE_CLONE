@@ -259,16 +259,16 @@ const Home = () => {
 
       <div className='last'>
         <div>
-            <img style={{borderRadius:"30px",height:"300px",width:"300px"}}src="https://scontent.cdninstagram.com/v/t51.29350-15/286476421_5512742678790182_9133878254313440813_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=CnryRuUG1r8AX-toUIw&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-yOcODn8I8gHwCl4KwW5AGHGAQVzIZdOgaaXqsMiuCyw&oe=62A91C15" alt="" />
+            <img style={{borderRadius:"30px",height:"300px",width:"300px"}}src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/1_6875ada8-f1e6-4589-b1fd-6f13a86b8ddb-min_540x.jpg?v=1614326164" alt="" />
         </div>
         <div>
-            <img style={{borderRadius:"30px",height:"300px",width:"300px"}} src="https://scontent.cdninstagram.com/v/t51.29350-15/286027759_416785993449025_2116452231653606930_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=x4FoKoITEjUAX_ofC5p&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-0UV01xxO9L70GkJEdcjEQ7x0MtIe9Y4MhsWl1A6FZSA&oe=62A93734" alt="" />
+            <img style={{borderRadius:"30px",height:"300px",width:"300px"}} src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/dragon-fruit--white-cover.progressive.jpg?v=1632470660" alt="" />
         </div>
         <div>
-            <video style={{borderRadius:"30px",height:"300px",width:"300px"}} src="https://video.cdninstagram.com/v/t50.16885-16/285909835_603589997451548_6522251493369985266_n.mp4?_nc_cat=111&vs=5485571498133973_257908270&_nc_vs=HBksFQAYJEdFdWpDaEVjV1dNLTlpUUNBUEk0RkVZdHNZTmFidlZCQUFBRhUAAsgBABUAGCRHRkFZQ3hFOTZXX2pMWHNBQUlVb0M3aHN4d3hFYnZWQkFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMRUAACa6ifqGtqXbPxUCKAJDMywXQCLPXCj1wo8YEmRhc2hfYmFzZWxpbmVfMV92MREAdewHAA%3D%3D&ccb=1-7&_nc_sid=59939d&efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5pZ3R2In0%3D&_nc_ohc=ivHHw-CeE-0AX8QdXsq&_nc_ht=video.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_JSf9KYviVZAueqczJntPcx-RSteorPEBYYLWQ4CnTYg&oe=62A4FCAA&_nc_rid=d5873528c1"></video>
+            <img style={{borderRadius:"30px",height:"300px",width:"300px"}} src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/a0cfceb5-76a4-4994-9d37-978c6dc3b309.png?v=1611811512"></img>
         </div>
         <div>
-            <img style={{borderRadius:"30px",height:"300px",width:"300px"}} src="https://scontent.cdninstagram.com/v/t51.29350-15/285540497_766260721220580_2690661920226980915_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=jj62hBHYpNAAX_TGGNq&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_nizfsaDDya8cnbvoFLWkn_o36FAuE3I-Wm0j_6Q4JNQ&oe=62A88483" alt="" />
+            <img style={{borderRadius:"30px",height:"300px",width:"300px"}} src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Avocado.progressive.jpg?v=1622045722" alt="" />
         </div>
       </div>
 

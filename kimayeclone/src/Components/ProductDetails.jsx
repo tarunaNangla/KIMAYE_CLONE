@@ -1,8 +1,6 @@
-import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import  { useEffect, useState } from 'react'
-import axios from "axios"
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect,useState } from 'react'
+import axios from 'axios'
+import {  useParams } from 'react-router-dom';
 
 let data=[ {   "id":"1",
 "imageurl":"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cover_19473cce-96ae-4149-aaa1-508f17ac6c28.progressive.jpg?v=1648186636",
@@ -76,67 +74,44 @@ let data=[ {   "id":"1",
 "para":"₹  51"
 }]
 
-const AllFruitsProduct = () => {
-    const navigate = useNavigate();
-//     const [data,setData]=useState([]);
-//   const [loading,setLoading]=useState(false);
-//   useEffect (()=>{
-//     axios({
-//       url:"  http://localhost:3000/data",
-//       method:"get"
-//     }).then(res=>{
-//       setData(res.data);
+const  Productdetails = () => {
+    const {id}=useParams();
+    const [data,setData]=useState([]);
+    const [loading,setLoading]=useState(true);
+    const params=useParams();
+    useEffect(()=>{
+        setLoading(true)
+        const {id}=params;
+        axios({
+          url:` http://localhost:3000/data/${id}`,
+          method: "get"
+        }).then(res=>{
+            // console.log(res.data);
+           setData(res.data);
+           setLoading(false)
 
-//     }).catch(error=>{
-//       setLoading(false)
-//     })
-//   },[])
-//   console.log(data)
+        }).catch((error)=>{
+            setLoading(false)
+        })
+    },[params])
+    console.log(data)
   return (
-    <div className='bc'>
-     <div style={{display:"flex",gap:"40px",justifyContent:"center"}}>
-        <div><Link to="/fruits">ALL FRUITS</Link></div>
-        <div><Link to="/freshCuts">FRESH CUTS </Link></div>
-        <div><Link  to="/combos">FRUIT COMBOS </Link></div>
-        <div><Link to="/gifts">GIFT BY KIMAYE</Link></div>
-     </div>
-     {/* AllFruitsProduct
-      */}
-<div style={{textAlign:"left",marginTop:"100px",marginLeft:"90px"}} onClick={()=>navigate("/")}>
-    <img style={{width:"20px",height:"20px"}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Home_Icon_by_Lakas.svg/1200px-Home_Icon_by_Lakas.svg.png" alt="" />
-    HOME/ All Fruits</div>
-<div className='griddata' >
-     
-     {
-
-// {`/fruits/${ele.id}`}
-       data.map((ele)=>{
-         return(
-           <div key={ele.id}>
-                   <div >
-                    <Link to={`/fruits/${ele.id}`}>
-
-                        <img  style={{width:"350px",height:"350px",borderRadius:"30px"}} src={ele.imageurl} alt="photo" />
-                    </Link>
-                         <div onClick={()=>navigate("/cart")}>Add to cart</div>
-                       </div>
-                  
-                   <p>{ele.heading}</p>
-                   <span style={{color:"red",fontWeight:"bold"}}>Price: {ele.para}</span>
-                   <div>
-                    <Outlet/>
-                    </div>
-                   
-           </div>
-         )
-       })
-     }
-   </div>
-
-
-
+    <div>
+       
+        {/* Product:{id}:{data.find((i)=>i.id===id).heading} */}
+       
+         <div key={data.id}>
+         <h1>Product details</h1>
+       
+      {/* <div>{data.imageurl}</div> */}
+      {/* <div>{data.description}</div>
+      <div><img src={data.image} alt="data" /></div>
+       <div>{data.price}</div>
+       <div>{data.rating}</div>
+       <div>{data.title}</div> */}
+         </div>
     </div>
   )
 }
 
-export default AllFruitsProduct
+export default  Productdetails

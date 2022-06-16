@@ -402,3 +402,9 @@ padding-top: 50px;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.cartflex{
+  display: flex;
+  justify-content: center;
+  gap:50px;
+}
